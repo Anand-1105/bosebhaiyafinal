@@ -1,0 +1,41 @@
+{
+  "name": "client",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "pages:build": "npx @cloudflare/next-on-pages",
+    "preview": "npm run pages:build && wrangler pages dev",
+    "deploy": "npm run pages:build && wrangler pages deploy"
+  },
+  "dependencies": {
+    "@ai-sdk/openai": "^3.0.55",
+    "@ai-sdk/react": "^3.0.174",
+    "@mediapipe/face_mesh": "^0.4.1633559619",
+    "@tensorflow/tfjs": "^4.22.0",
+    "ai": "^6.0.172",
+    "face-api.js": "^0.22.2",
+    "lucide-react": "^0.575.0",
+    "next": "^15.3.3",
+    "react": "^19.2.5",
+    "react-calendly": "^4.4.0",
+    "react-dom": "^19.2.5",
+    "resend": "^6.12.2",
+    "socket.io-client": "^4.8.1"
+  },
+  "devDependencies": {
+    "@cloudflare/next-on-pages": "^1.13.16",
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "^16.2.2",
+    "tailwindcss": "^4",
+    "typescript": "^5",
+    "wrangler": "^4.87.0"
+  }
+}
