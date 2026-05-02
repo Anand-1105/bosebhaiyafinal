@@ -42,7 +42,7 @@ export default function HeroSection({ onScheduleMeeting }) {
       attempts++;
     }
     
-    setDisplayItems(result);
+    requestAnimationFrame(() => setDisplayItems(result));
   }, []);
 
   return (

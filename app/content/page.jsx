@@ -150,7 +150,7 @@ export default function ContentPage() {
         </h2>
         
         <p className="text-gray-600 text-xl font-medium max-w-2xl mx-auto leading-relaxed mb-10">
-          "Free, high-quality educational content across YouTube, Instagram, and LinkedIn covering AI, Java, and modern tech."
+          &quot;Free, high-quality educational content across YouTube, Instagram, and LinkedIn covering AI, Java, and modern tech.&quot;
         </p>
 
         {/* Platform Mini-Stats */}

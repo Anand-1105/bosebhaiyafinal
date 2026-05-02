@@ -103,10 +103,10 @@ export default function HireMePage() {
             <span className="text-[11px] font-black uppercase tracking-[0.2em] text-white/60">Work With Me</span>
           </div>
           <h1 className="text-4xl sm:text-5xl md:text-7xl font-black tracking-tight mb-6">
-            Let's build <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#84ADFF] to-[#3D5BF1]">Something Great.</span>
+            Let&apos;s build <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#84ADFF] to-[#3D5BF1]">Something Great.</span>
           </h1>
           <p className="text-white/40 max-w-2xl text-base sm:text-lg leading-relaxed">
-            Whether you need a technical partner, a speaker for your next event, or a consultant for your product strategy — I'm ready to collaborate.
+            Whether you need a technical partner, a speaker for your next event, or a consultant for your product strategy — I&apos;m ready to collaborate.
           </p>
         </div>
       </section>
@@ -210,7 +210,7 @@ export default function HireMePage() {
                   {submitStatus === 'success' && (
                     <div className="bg-[#10B981]/20 border border-[#10B981]/50 text-[#10B981] p-4 rounded-2xl flex items-center gap-3">
                       <CheckCircle2 size={20} />
-                      <span className="text-sm font-bold">Message received! I'll get back to you shortly.</span>
+                      <span className="text-sm font-bold">Message received! I&apos;ll get back to you shortly.</span>
                     </div>
                   )}
                   {submitStatus === 'error' && (

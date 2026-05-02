@@ -212,7 +212,8 @@ export default function Chatbot() {
   }, [messages]);
 
   useEffect(() => {
-    setMounted(true);
+    // Avoid synchronous state update in effect
+    requestAnimationFrame(() => setMounted(true));
     const saved = localStorage.getItem('sb_chat_sessions_v2');
     if (saved) {
       try {
@@ -395,7 +396,7 @@ export default function Chatbot() {
                     <div>
                       <p className="text-white font-bold text-sm">Ask me anything!</p>
                       <p className="text-white/40 text-[11px] mt-2 px-8 leading-relaxed">
-                        I can tell you about Souhardya's background, projects, or help you book a meeting.
+                        I can tell you about Souhardya&apos;s background, projects, or help you book a meeting.
                       </p>
                     </div>
                   </div>

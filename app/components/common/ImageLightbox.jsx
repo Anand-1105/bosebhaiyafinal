@@ -31,8 +31,10 @@ export default function ImageLightbox({ src, images, index = 0, alt = "", childr
 
   useEffect(() => {
     if (!open) {
-      setScale(1);
-      setDrag({ active: false, x: 0, y: 0, startX: 0, startY: 0 });
+      requestAnimationFrame(() => {
+        setScale(1);
+        setDrag({ active: false, x: 0, y: 0, startX: 0, startY: 0 });
+      });
     }
   }, [open]);
 

@@ -75,7 +75,7 @@ function FlipCard({ person, index }) {
           <p className="text-white font-black text-[16px] mb-0.5">{person.name}</p>
           <p className="text-[#84ADFF] font-bold text-[11px] mb-3">{person.role}</p>
           <div className="flex-1 flex flex-col justify-center relative mb-4">
-            <p className="text-white/60 text-[12px] leading-[1.5] font-medium italic relative z-10 overflow-y-auto scrollbar-hide py-1">"{person.desc}"</p>
+            <p className="text-white/60 text-[12px] leading-[1.5] font-medium italic relative z-10 overflow-y-auto scrollbar-hide py-1">&quot;{person.desc}&quot;</p>
           </div>
           <div className="flex flex-wrap gap-1.5 mb-5 mt-auto">
             {person.tags.map(t => (

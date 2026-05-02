@@ -80,7 +80,7 @@ export default function Chatbot() {
               </div>
               <div className="flex flex-col gap-1.5 max-w-[85%]">
                 <div className="bg-[#0D1635] border border-white/5 px-3 py-2.5 sm:px-4 sm:py-3 rounded-2xl rounded-tl-sm text-white/90 text-xs sm:text-[13.5px] leading-relaxed shadow-md">
-                  Hi there! 👋 I'm Souhardya's personal AI assistant. I know everything about his work experience, startups, tech stack, and events. How can I help you today?
+                  Hi there! 👋 I&apos;m Souhardya&apos;s personal AI assistant. I know everything about his work experience, startups, tech stack, and events. How can I help you today?
                 </div>
                 <div className="text-[9px] sm:text-[10px] text-white/30 ml-1">Just now</div>
               </div>
