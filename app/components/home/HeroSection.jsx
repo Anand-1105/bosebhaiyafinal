@@ -49,7 +49,7 @@ export default function HeroSection({ onScheduleMeeting }) {
     <section className="relative w-full min-h-screen flex flex-col justify-center items-center overflow-hidden" style={{ borderBottomLeftRadius: '40px', borderBottomRightRadius: '40px' }}>
 
       {/* ── Background Video ── */}
-      <video autoPlay loop muted playsInline className="absolute inset-0 w-full h-full object-cover z-0" src={HERO.videoSrc} />
+      <video autoPlay loop muted playsInline preload="auto" className="absolute inset-0 w-full h-full object-cover z-0" src={HERO.videoSrc} />
 
       {/* ── Dark cinematic gradient overlay ── */}
       <div className="absolute inset-0 z-10 bg-gradient-to-b from-black/70 via-black/50 to-black/80" />

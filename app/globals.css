@@ -32,6 +32,7 @@ body {
   font-family: 'Inter', system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;
   letter-spacing: -0.02em;
+  zoom: 0.8;
 }
 
 /* ── Scrollbar ── */
