@@ -173,7 +173,7 @@ import { InlineWidget } from "react-calendly";
 export function ScheduleModal({ onClose }) {
   return (
     <div className="fixed inset-0 z-[200] flex items-center justify-center p-3 sm:p-4 bg-black/60 backdrop-blur-md animate-fadeIn">
-      <div className="relative bg-[#0A1228] border border-[#5363B1]/30 rounded-[1.5rem] sm:rounded-[2rem] w-full max-w-4xl shadow-[0_40px_100px_rgba(0,0,0,0.7)] animate-modalIn flex flex-col">
+      <div className="relative bg-[#0A1228] border border-[#5363B1]/30 rounded-[1.5rem] sm:rounded-[2rem] w-full max-w-2xl shadow-[0_40px_100px_rgba(0,0,0,0.7)] animate-modalIn flex flex-col">
         <button onClick={onClose} className="absolute top-4 right-4 p-2 bg-white/10 hover:bg-white/20 rounded-full transition-all text-white z-50">
           <X size={18} />
         </button>
@@ -188,7 +188,7 @@ export function ScheduleModal({ onClose }) {
           <div className="w-full rounded-2xl overflow-hidden border border-white/10 bg-white relative">
             <InlineWidget 
               url="https://calendly.com/anand01ts/30min" 
-              styles={{ height: '500px' }}
+              styles={{ height: '400px' }}
               pageSettings={{
                 backgroundColor: 'ffffff',
                 hideEventTypeDetails: false,

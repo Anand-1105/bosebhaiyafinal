@@ -293,7 +293,7 @@ export default function Chatbot() {
     <div className="fixed bottom-6 right-6 z-[100] flex flex-col items-end">
       {/* Chat Window */}
       {isOpen && (
-        <div className="mb-4 w-[350px] sm:w-[400px] h-[500px] sm:h-[600px] bg-[#0D1635] border border-white/10 rounded-[32px] shadow-2xl overflow-hidden flex flex-col animate-in fade-in slide-in-from-bottom-4 duration-300">
+        <div className="mb-4 w-[320px] sm:w-[360px] h-[450px] sm:h-[550px] bg-[#0D1635] border border-white/10 rounded-[32px] shadow-2xl overflow-hidden flex flex-col animate-in fade-in slide-in-from-bottom-4 duration-300">
           {/* Header */}
           <div className="p-6 bg-gradient-to-r from-[#3D5BF1] to-[#4361EE] flex items-center justify-between">
             <div className="flex items-center gap-3">
