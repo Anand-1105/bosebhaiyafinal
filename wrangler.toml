@@ -1,0 +1,10 @@
+name = "bosebhaiyafinal"
+compatibility_date = "2024-09-23"
+compatibility_flags = ["nodejs_compat"]
+
+[vars]
+NEXT_PUBLIC_CALENDLY_URL = "https://calendly.com/anand01ts/30min"
+
+[[kv_namespaces]]
+binding = "NEXT_CACHE"
+id = "dummy_id_for_nextjs_cache"
