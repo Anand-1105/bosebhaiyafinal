@@ -17,6 +17,32 @@ export const metadata: Metadata = {
   title: "Souhardya Bose — Professor · Builder · Community Leader",
   description:
     "I turn classrooms into launchpads and ideas into movements. Founder of Techfluence — 6 editions, 100K+ reach, 30+ global leaders shaping tomorrow's tech landscape.",
+  keywords: ["Souhardya Bose", "Techfluence", "Professor", "Community Leader", "Builder", "Tech Education", "Entrepreneurship"],
+  authors: [{ name: "Souhardya Bose" }],
+  creator: "Souhardya Bose",
+  publisher: "Souhardya Bose",
+  metadataBase: new URL("https://souhardyabose.com"),
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://souhardyabose.com",
+    title: "Souhardya Bose — Professor · Builder · Community Leader",
+    description: "I turn classrooms into launchpads and ideas into movements. Founder of Techfluence.",
+    siteName: "Souhardya Bose",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Souhardya Bose — Professor · Builder · Community Leader",
+    description: "I turn classrooms into launchpads and ideas into movements.",
+    creator: "@SouhardyaBose", // Replace with actual handle if different
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({

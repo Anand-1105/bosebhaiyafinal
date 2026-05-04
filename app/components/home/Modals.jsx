@@ -177,17 +177,17 @@ export function ScheduleModal({ onClose }) {
         <button onClick={onClose} className="absolute top-4 right-4 p-2 bg-white/10 hover:bg-white/20 rounded-full transition-all text-white z-50">
           <X size={18} />
         </button>
-        
+
         <div className="p-6 sm:p-10 flex flex-col items-center">
           <div className="w-12 sm:w-14 h-12 sm:h-14 rounded-2xl bg-[#3D5BF1]/15 border border-[#3D5BF1]/25 flex items-center justify-center mb-4">
             <Calendar size={22} className="text-[#84ADFF]" />
           </div>
           <h2 className="text-xl sm:text-2xl font-black text-white tracking-tight mb-2">Book a Session</h2>
           <p className="text-white/50 text-xs mb-6 text-center max-w-xs">Select a convenient time for our discovery call or technical consultation.</p>
-          
+
           <div className="w-full rounded-2xl overflow-hidden border border-white/10 bg-white relative">
-            <InlineWidget 
-              url="https://calendly.com/anand01ts/30min" 
+            <InlineWidget
+              url="https://calendly.com/anand01ts/30min"
               styles={{ height: '350px' }}
               pageSettings={{
                 backgroundColor: 'ffffff',
