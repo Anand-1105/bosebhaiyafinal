@@ -50,9 +50,26 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Souhardya Bose",
+    "url": "https://souhardyabose.com",
+    "jobTitle": "Professor, Builder, Community Leader",
+    "sameAs": [
+      "https://linkedin.com/in/souhardyabose", // Add actual links if you have them
+      "https://twitter.com/SouhardyaBose"
+    ],
+    "description": "Founder of Techfluence — Turning classrooms into launchpads and ideas into movements."
+  };
+
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
         {children}
         <Chatbot />
       </body>
