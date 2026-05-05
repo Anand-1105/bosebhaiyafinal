@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from 'react';
-import { X, ChevronLeft, ChevronRight, Star, Users, Linkedin } from 'lucide-react';
+import { X, ChevronLeft, ChevronRight, Star, Users } from 'lucide-react';
 import { MEETS } from '../../lib/data';
 
 const CATEGORY_COLORS = {
@@ -172,18 +172,6 @@ function MeetModal({ person, onClose }) {
             <span className="text-white/20 text-[11px]">
               {person.photos.length} photo{person.photos.length > 1 ? 's' : ''}
             </span>
-            {person.linkedin && (
-              <a
-                href={person.linkedin}
-                target="_blank"
-                rel="noreferrer"
-                className="ml-auto flex items-center gap-2 bg-[#0A66C2] hover:bg-[#004182] text-white text-[12px] font-bold px-4 py-2.5 rounded-xl transition-all shadow-lg shadow-[#0A66C2]/20"
-                onClick={e => e.stopPropagation()}
-              >
-                <Linkedin size={14} />
-                View on LinkedIn
-              </a>
-            )}
           </div>
         </div>
       </div>
