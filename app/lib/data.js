@@ -128,8 +128,8 @@ export const ABOUT_ROLES = [
 
 // The education block in the About section (right column)
 export const ABOUT_EDUCATION = [
-  { degree: 'M.Tech — CSE', school: 'LPU · 2023–25', icon: 'graduation', color: '#4361EE' },
-  { degree: 'B.Tech — CSE', school: 'LPU · 2019–23', icon: 'book', color: '#7C3AED' },
+  { degree: 'M.Tech — CSE', school: 'LPU · Grade: A, Academic Scholar', icon: 'graduation', color: '#4361EE' },
+  { degree: 'B.Tech — CSE', school: 'LPU · Grade: A, Academic Scholar', icon: 'book', color: '#7C3AED' },
 ];
 
 // The quick fact badge in the bottom of the left photo column
