@@ -25,7 +25,7 @@ export const HERO = {
   name: 'Souhardya Bose',                          // Your full name
   tagline: 'Professor. Builder.',                  // First part of large title
   taglineHighlight: 'Lead',                     // Colored part of large title
-  subheadline: 'Architecting scalable AI solutions and cross-functional ecosystems. Founder of Techfluence — Orchestrating 6 global editions with 100K+ reach, integrating 30+ industry leaders to redefine the future of intelligent systems.',
+  subheadline: 'Tech Evangelist architecting scalable AI solutions and cross-functional ecosystems. Founder of Techfluence — orchestrating 6 global editions with 1M+ reach, uniting 50+ industry leaders to redefine the future of intelligent systems.',
 
   videoSrc: '/homepage.mp4',                       // Background video file
   studentCount: '15k+ students mentored',          // Text next to the small avatars

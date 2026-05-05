@@ -77,7 +77,7 @@ export default function PodcastsSection() {
                       <iframe className="absolute top-0 left-0 w-full h-full" src={`https://www.youtube.com/embed/${p.videoId}?rel=0&autoplay=1`} title={p.title} frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
                     ) : (
                       <>
-                        <img src={`https://img.youtube.com/vi/${p.videoId}/mqdefault.jpg`} alt={p.title} className="absolute inset-0 w-full h-full object-cover opacity-80 group-hover/video:scale-105 transition-all duration-700" />
+                        <img src={`https://img.youtube.com/vi/${p.videoId}/mqdefault.jpg`} alt={p.title} loading="lazy" decoding="async" className="absolute inset-0 w-full h-full object-cover opacity-80 group-hover/video:scale-105 transition-all duration-700" />
                         <div className="absolute inset-0 bg-black/30 group-hover/video:bg-black/10 transition-colors duration-300" />
                         <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
                           <div className="w-12 h-12 bg-black/60 rounded-full flex items-center justify-center backdrop-blur-sm border border-white/20 group-hover/video:scale-110 group-hover/video:bg-blue-600/80 transition-all duration-300">

@@ -42,7 +42,7 @@ function FlipCard({ person, index }) {
             <RefreshCw size={12} className="text-white/70" />
           </div>
           <div className="absolute inset-0 flex items-center justify-center text-[80px] font-black pointer-events-none select-none" style={{ color: ph.accent, opacity: 0.06 }}>{initials}</div>
-          <img src={person.img} alt={person.name} className="absolute inset-0 w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105 opacity-80 group-hover:opacity-95" />
+          <img src={person.img} alt={person.name} loading="lazy" decoding="async" className="absolute inset-0 w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105 opacity-80 group-hover:opacity-95" />
           <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent" />
           <div className="absolute bottom-0 w-full px-5 pb-6 pt-10 flex flex-col justify-end">
             <p className="text-white font-black text-[16px] sm:text-[18px] leading-tight mb-1 relative z-10">{person.name}</p>
@@ -70,7 +70,7 @@ function FlipCard({ person, index }) {
           }}
         >
           <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-[#4361EE]/20 mb-4 shrink-0" style={{ background: ph.bg }}>
-            <img src={person.img} alt={person.name} className="w-full h-full object-cover object-top" />
+            <img src={person.img} alt={person.name} loading="lazy" decoding="async" className="w-full h-full object-cover object-top" />
           </div>
           <p className="text-white font-black text-[16px] mb-0.5">{person.name}</p>
           <p className="text-[#84ADFF] font-bold text-[11px] mb-3">{person.role}</p>
@@ -153,6 +153,8 @@ export default function GalleryPage() {
                 <ImageLightbox images={CLASSROOM_PHOTOS} index={i}>
                   <img 
                     src={img.src} 
+                    loading="lazy"
+                    decoding="async"
                     className="w-full h-auto opacity-80 group-hover:opacity-100 transition-all duration-700 group-hover:scale-105" 
                     alt={img.alt} 
                   />

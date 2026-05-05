@@ -211,7 +211,7 @@ export default function ContentPage() {
             >
               {/* Image/Thumbnail Container */}
               <div className="aspect-video w-full rounded-2xl overflow-hidden relative mb-5">
-                <img src={item.thumbnail} alt={item.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                <img src={item.thumbnail} alt={item.title} loading="lazy" decoding="async" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
                 
                 {/* Overlays */}
                 <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors duration-500" />

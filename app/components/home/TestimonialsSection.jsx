@@ -53,7 +53,7 @@ export default function TestimonialsSection() {
               </div>
               <p className="text-white/60 leading-relaxed italic mb-6 sm:mb-8 text-[13px] sm:text-[15px] group-hover:text-white/85 transition-colors relative z-10">&ldquo;{t.text}&rdquo;</p>
               <div className="flex items-center gap-3 sm:gap-4 relative z-10">
-                <img src={t.img} alt={t.name} className="w-10 sm:w-12 h-10 sm:h-12 rounded-full object-cover border-[2px] border-[#5363B1]/30 shadow-lg group-hover:border-[#3D5BF1]/60 group-hover:scale-110 transition-all" />
+                <img src={t.img} alt={t.name} loading="lazy" decoding="async" className="w-10 sm:w-12 h-10 sm:h-12 rounded-full object-cover border-[2px] border-[#5363B1]/30 shadow-lg group-hover:border-[#3D5BF1]/60 group-hover:scale-110 transition-all" />
                 <div>
                   <div className="text-white font-black text-[14px] sm:text-[15px]">{t.name}</div>
                   <div className="text-white/40 text-[10px] sm:text-xs font-semibold uppercase tracking-widest mt-0.5">{t.role}</div>

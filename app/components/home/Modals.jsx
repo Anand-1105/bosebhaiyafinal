@@ -22,7 +22,7 @@ export function GuestModal({ guest, onClose }) {
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] sm:w-[400px] h-[300px] sm:h-[400px] rounded-full pointer-events-none opacity-40 blur-[100px]" style={{ background: 'radial-gradient(circle, #3D5BF1 0%, transparent 70%)' }} />
           <div className="relative w-48 sm:w-64 h-48 sm:h-64 mb-6 sm:mb-10">
             <div className="w-full h-full rounded-[1.5rem] sm:rounded-[2.5rem] overflow-hidden border-4 border-[#5363B1]/20 shadow-[0_20px_60px_rgba(61,91,241,0.4)] z-20 relative">
-              <img src={guest.img} alt={guest.name} className="w-full h-full object-cover" />
+              <img src={guest.img} alt={guest.name} loading="lazy" decoding="async" className="w-full h-full object-cover" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
               <div className="absolute bottom-4 sm:bottom-5 left-4 sm:left-5">
                 <div className="text-white font-black text-lg sm:text-xl tracking-tight leading-none">{guest.name?.split(' ')[0]}</div>

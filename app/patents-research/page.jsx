@@ -159,7 +159,7 @@ export default function IntellectualPropertyPage() {
                   <div key={paper.id} className="bg-[#0D1635] rounded-[32px] p-8 border border-white/5 shadow-2xl group hover:border-white/10 transition-all flex flex-col lg:flex-row gap-8">
                     {paper.img && (
                       <div className="lg:w-64 shrink-0 aspect-video lg:aspect-square rounded-2xl overflow-hidden">
-                        <img src={paper.img} alt={paper.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+                        <img src={paper.img} alt={paper.title} loading="lazy" decoding="async" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
                       </div>
                     )}
                     <div className="flex-1">

@@ -49,7 +49,7 @@ export default function HeroSection({ onScheduleMeeting }) {
     <section className="relative w-full min-h-screen flex flex-col justify-center items-center overflow-hidden" style={{ borderBottomLeftRadius: '40px', borderBottomRightRadius: '40px' }}>
 
       {/* ── Background Video ── */}
-      <video autoPlay loop muted playsInline preload="auto" className="absolute inset-0 w-full h-full object-cover z-0" src={HERO.videoSrc} />
+      <video autoPlay loop muted playsInline preload="metadata" className="absolute inset-0 w-full h-full object-cover z-0" style={{ objectPosition: '50% 25%' }} src={HERO.videoSrc} />
 
       {/* ── Dark cinematic gradient overlay ── */}
       <div className="absolute inset-0 z-10 bg-gradient-to-b from-black/70 via-black/50 to-black/80" />
@@ -79,7 +79,7 @@ export default function HeroSection({ onScheduleMeeting }) {
         <div className="flex items-center gap-3 sm:gap-4">
           <div className="flex -space-x-2 sm:-space-x-3">
             {HERO.avatarImages.map((src, i) => (
-              <img key={i} src={src} alt="Student" className="w-8 h-8 sm:w-10 sm:h-10 rounded-full border-2 border-white/50 object-cover" />
+              <img key={i} src={src} alt="Student" loading="lazy" decoding="async" className="w-8 h-8 sm:w-10 sm:h-10 rounded-full border-2 border-white/50 object-cover" />
             ))}
             <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full border-2 border-white/50 bg-white/20 backdrop-blur-sm text-white flex justify-center items-center text-xs font-bold">+</div>
           </div>
@@ -102,7 +102,7 @@ export default function HeroSection({ onScheduleMeeting }) {
               )}
               {stat.platform === 'profile' && (
                 <div className="w-7 h-7 sm:w-8 sm:h-8 rounded-full overflow-hidden shrink-0 border border-white/30">
-                  <img src={stat.img || HERO.profileImg} alt="Avatar" className="w-full h-full object-cover" />
+                  <img src={stat.img || HERO.profileImg} alt="Avatar" loading="lazy" decoding="async" className="w-full h-full object-cover" />
                 </div>
               )}
               <div className="flex flex-col">

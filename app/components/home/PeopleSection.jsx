@@ -28,7 +28,7 @@ function FlipCard({ person, index }) {
             <RefreshCw size={12} className="text-white/70" />
           </div>
           <div className="absolute inset-0 flex items-center justify-center text-[80px] sm:text-[90px] font-black pointer-events-none select-none" style={{ color: ph.accent, opacity: 0.06 }}>{initials}</div>
-          <img src={person.img} alt={person.name} className="absolute inset-0 w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105 opacity-80 group-hover:opacity-95" />
+          <img src={person.img} alt={person.name} loading="lazy" decoding="async" className="absolute inset-0 w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105 opacity-80 group-hover:opacity-95" />
           <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent" />
           <div className="absolute top-0 left-0 right-0 h-0.5 opacity-60" style={{ background: `linear-gradient(to right, transparent, ${ph.accent}, transparent)` }} />
           <div className="absolute bottom-0 w-full px-4 sm:px-5 pb-5 sm:pb-6 pt-8 sm:pt-10 flex flex-col justify-end">
@@ -44,7 +44,7 @@ function FlipCard({ person, index }) {
         {/* BACK */}
         <div className="absolute inset-0 rounded-[18px] sm:rounded-[20px] bg-[#0A1228] border border-white/10 shadow-[0_8px_32px_rgba(0,0,0,0.4)] flex flex-col justify-center px-4 sm:px-5 py-4 sm:py-5" style={{ backfaceVisibility: "hidden", WebkitBackfaceVisibility: "hidden", transform: "rotateY(180deg)" }}>
           <div className="w-9 sm:w-10 h-9 sm:h-10 rounded-full overflow-hidden border-2 border-[#4361EE]/20 mb-2 sm:mb-3 shrink-0" style={{ background: ph.bg }}>
-            <img src={person.img} alt={person.name} className="w-full h-full object-cover object-top" />
+            <img src={person.img} alt={person.name} loading="lazy" decoding="async" className="w-full h-full object-cover object-top" />
           </div>
           <div className="absolute top-3 right-3 z-20 bg-[#4361EE]/10 p-1.5 rounded-full border border-[#4361EE]/20 text-[#4361EE] hover:bg-[#4361EE] hover:text-white transition-colors duration-300">
             <RefreshCw size={13} />

@@ -99,7 +99,7 @@ export default function TechfluenceSection({ onGuestClick }) {
                     <div className="absolute top-0 right-0 w-24 sm:w-32 h-full bg-[#3D5BF1]/5 skew-x-[30deg] translate-x-12 sm:translate-x-16 group-hover:translate-x-8 sm:group-hover:translate-x-12 transition-transform duration-700 pointer-events-none" />
                     <div className="flex items-start justify-between relative z-10">
                       <div className="w-16 sm:w-20 h-16 sm:h-20 rounded-xl sm:rounded-2xl overflow-hidden border-2 border-[#5363B1]/30 p-0.5 sm:p-1 bg-[#0A1228] group-hover:border-[#3D5BF1]/60 transition-all duration-500">
-                        <img src={guestImg} alt={g.name} className="w-full h-full object-cover rounded-lg sm:rounded-xl" />
+                        <img src={guestImg} alt={g.name} loading="lazy" decoding="async" className="w-full h-full object-cover rounded-lg sm:rounded-xl" />
                       </div>
                       <div onClick={(e) => e.stopPropagation()}>
                         <a href={g.linkedin} target="_blank" rel="noreferrer" className="w-9 sm:w-10 h-9 sm:h-10 flex items-center justify-center bg-white/5 hover:bg-[#0A66C2] text-white/40 hover:text-white border border-white/10 hover:border-[#3D5BF1]/40 rounded-xl transition-all">
@@ -163,7 +163,7 @@ export default function TechfluenceSection({ onGuestClick }) {
                 const displayImages = showMoreImages ? combinedGallery : combinedGallery.slice(0, 4);
                 return displayImages.map((imgSrc, idx) => (
                   <div key={idx} className="aspect-[4/3] rounded-xl sm:rounded-2xl overflow-hidden border border-[#5363B1]/25 group bg-[#0A1228]">
-                    <img src={imgSrc} alt={`Season ${ev.edition} - Highlight ${idx + 1}`} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                    <img src={imgSrc} alt={`Season ${ev.edition} - Highlight ${idx + 1}`} loading="lazy" decoding="async" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
                   </div>
                 ));
               })()}
