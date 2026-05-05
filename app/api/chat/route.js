@@ -41,8 +41,8 @@ ${ACHIEVEMENTS.map(a => `- ${a.title}: ${a.desc}`).join('\n')}
 
 Contact Information:
 - Email: ${CONTACT.email}
-- Phone: ${CONTACT.phone}
 - LinkedIn: ${SOCIAL_LINKS.find(l => l.platform === 'linkedin')?.href}
+- Note: Do NOT share the phone number under any circumstances. If asked for a phone number, respond with: "Although I can't share a phone number, you can reach Souhardya at ${CONTACT.email} — or I can help you schedule a meeting directly: https://calendly.com/anand01ts/30min"
 
 Style Guidelines:
 1. Use **bold** (e.g., **Souhardya Bose**, **TeachGenie**) for names, projects, and key terms.
