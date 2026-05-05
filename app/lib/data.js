@@ -855,12 +855,12 @@ export const PEOPLE = [
 export const OTHER_EVENTS = [
   {
     id: 101,
-    title: 'Techfluence: Part 1',
+    title: 'Techfluence 1, 2 and 3',
     subtitle: 'Seasons 1, 2 & 3',
     date: '2023',
     description: 'The founding editions that kickstarted a tech community at LPU. Focused on emerging tech trends, hands-on product building, and open-source impact.',
     stats: [
-      { label: 'Cumulative Reach', value: '2M+' },
+      { label: 'Cumulative Reach', value: '500K+' },
       { label: 'Guest Speakers', value: '12+' },
       { label: 'Students Present', value: '2K+' },
     ],
@@ -886,12 +886,12 @@ export const OTHER_EVENTS = [
   },
   {
     id: 102,
-    title: 'Techfluence: Part 2',
+    title: 'Techfluence 4, 5 and 6',
     subtitle: 'Seasons 4, 5 & 6',
     date: '2024-25',
     description: 'Scaling to national impact and global leadership. Featuring engineering leaders from Google, Microsoft, and Volvo, and crossing 5M+ cumulative reach.',
     stats: [
-      { label: 'Cumulative Reach', value: '7M+' },
+      { label: 'Cumulative Reach', value: '700K+' },
       { label: 'Guest Speakers', value: '18+' },
       { label: 'Students Present', value: '3K+' },
     ],
@@ -1716,7 +1716,6 @@ export const CONTACT = {
   taglineHighlight: 'Something.',
   subtitle: 'Professor · Consultant · Speaker · Technical Partner.',
   email: 'info.souhardya.bose@gmail.com',   // Update with your email
-  phone: '+91 8582988799',                  // Update with your phone number
   location: 'Punjab, India',
   hireMeHref: '/hire',
   footerName: 'Souhardya Bose.',
