@@ -27,7 +27,7 @@ export const HERO = {
   taglineHighlight: 'Lead',                     // Colored part of large title
   subheadline: 'Tech Evangelist architecting scalable AI solutions and cross-functional ecosystems. Founder of Techfluence — orchestrating 6 global editions with 1M+ reach, uniting 50+ industry leaders to redefine the future of intelligent systems.',
 
-  videoSrc: '/homepage.mp4',                       // Background video file
+  videoSrc: '/homepage_compressed.mp4',                       // Background video file
   studentCount: '15k+ students mentored',          // Text next to the small avatars
   profileImg: '/img/gallery/7.jpeg',               // Your portrait image
 

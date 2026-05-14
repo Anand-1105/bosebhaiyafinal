@@ -20,7 +20,6 @@ const replacements = [
     ['Something.', '{CONTACT.taglineHighlight}'],
     ['Professor · Consultant · Speaker · Technical Partner.', '{CONTACT.subtitle}'],
     ['info.souhardya.bose@gmail.com', '{CONTACT.email}'],
-    ['+91 8582988799', '{CONTACT.phone}'],
     ['Punjab, India', '{CONTACT.location}'],
     ['© 2025 Souhardya Bose. All rights reserved.', '{CONTACT.copyright}']
 ];

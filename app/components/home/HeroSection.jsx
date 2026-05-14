@@ -7,6 +7,7 @@ import { HERO, NAV, MARQUEE_ITEMS } from '../../lib/data';
 
 export default function HeroSection({ onScheduleMeeting }) {
   const [displayItems, setDisplayItems] = React.useState([...MARQUEE_ITEMS, ...MARQUEE_ITEMS, ...MARQUEE_ITEMS]);
+  const [videoLoaded, setVideoLoaded] = React.useState(false);
 
   React.useEffect(() => {
     // Create a randomized, extended set of items to prevent duplicates on screen
@@ -49,7 +50,19 @@ export default function HeroSection({ onScheduleMeeting }) {
     <section className="relative w-full min-h-screen flex flex-col justify-center items-center overflow-hidden" style={{ borderBottomLeftRadius: '40px', borderBottomRightRadius: '40px' }}>
 
       {/* ── Background Video ── */}
-      <video autoPlay loop muted playsInline preload="metadata" className="absolute inset-0 w-full h-full object-cover z-0" style={{ objectPosition: '50% 25%' }} src={HERO.videoSrc} />
+      <video 
+        autoPlay 
+        loop 
+        muted 
+        playsInline 
+        preload="auto" 
+        poster="/img/hero-poster.png"
+        onCanPlayThrough={() => setVideoLoaded(true)}
+        className={`absolute inset-0 w-full h-full object-cover z-0 transition-opacity duration-1000 ${videoLoaded ? 'opacity-100' : 'opacity-0'}`} 
+        style={{ objectPosition: '50% 35%' }}
+      >
+        <source src={HERO.videoSrc} type="video/mp4" />
+      </video>
 
       {/* ── Dark cinematic gradient overlay ── */}
       <div className="absolute inset-0 z-10 bg-gradient-to-b from-black/70 via-black/50 to-black/80" />
